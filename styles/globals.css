@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
+  --color-primary-5: #91ac9a;
+  --color-primary-4: #a9c3b6;
+  --color-primary-3: #cedfdf;
+  --color-primary-2: #b7d1d3;
+  --color-primary-1: #a6c3ce;
+  --color-primary-0: #8fb8ca;
+  --color-foreground: #fffff0;
+  --color-foreground-black: #06142e;
+
+  --color-secondary-6: #f3dbce;
+  --color-secondary-5: #ffcdb2;
+  --color-secondary-4: #ffb4a2;
+  --color-secondary-3: #e5989b;
+  --color-secondary-2: #b5838d;
+  --color-secondary-1: #6d6875;
 }
 
 body {
-  font-family: 'Open Sans', 'Lato', sans-serif;
+  font-family: "Open Sans", "Lato", sans-serif;
   margin: 0;
 }
 
@@ -15,5 +30,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  background-color: var(--color-secondary-3);
+  border: 1px solid var(--color-secondary-3);
+  cursor: pointer;
+  font: inherit;
+  color: var(--color-foreground);
+
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+button:hover {
+  background-color: var(--color-secondary-4);
+  border-color: var(--color-secondary-4);
+}
+
+input {
+  font: inherit;
+  color: var(--color-foreground-black);
+  background-color: var(--color-foreground);
+  border-radius: 4px;
+  border: 1px solid var(--color-primary-5);
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem;
 }
