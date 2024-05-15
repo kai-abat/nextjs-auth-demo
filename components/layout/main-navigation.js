@@ -12,7 +12,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <Link href="/">
-        <div className={classes.logo}>Next Auth Demo</div>
+        <div className={classes.logo}>NextAuth V4 Demo</div>
       </Link>
       <nav>
         <ul>
